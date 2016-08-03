@@ -1,4 +1,4 @@
-= docker-optimize
+# docker-optimize
 
 Optimize Dockerfiles, so the final docker image will have fewer layers.
 
@@ -6,13 +6,19 @@ Optimizations:
 * Collapse multiple RUN statements into a single one.
 * Collapse multiple ENV declarations into a single one.
 
-== Usage
+## Install
+
+```sh
+npm install -g docker-optimize
+```
+
+## Usage
 
 ```sh
 docker-optimize Dockerfile.build > Dockerfile
 ```
 
-=== Dockerfile.build (input)
+### Dockerfile.build (input)
 
 ```text
 FROM ubuntu:16.04
@@ -52,7 +58,7 @@ ADD bin /home/raptor/bin
 CMD /home/raptor/bin/run_conversion.sh $OUTPUT_FILE_NAME $SCALING_FACTOR
 ```
 
-=== Dockerfile (output)
+### Dockerfile (output)
 
 ```text
 # Optimized by docker-optimize: https://www.npmjs.com/package/docker-optimize
