@@ -1,0 +1,34 @@
+{
+  "name": "docker-optimize",
+  "description": "A simple program to optimize docker files.",
+  "bin" : {
+      "docker-optimize" : "bin/docker-optimize"
+  },
+  "author": {
+    "name": "Bogdan Mustiata",
+    "email": "bogdan.mustiata@gmail.com"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "docker-file-parser": "^0.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "main": "./lib/docker-optimize.ls",
+  "bugs": {
+    "url": "https://github.com/bmustiata/docker-optimize/issues"
+  },
+  "license": "BSD-3-Clause",
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/bmustiata/docker-optimize/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmustiata/docker-optimize.git"
+  },
+  "readmeFilename": "README.md",
+  "homepage": "http://blog.ciplogic.com"
+}
